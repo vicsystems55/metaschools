@@ -45,6 +45,14 @@ class PaymentController extends Controller
             ->send(new Welcome($datax));
 
 
+            if ($request->package == 'Basic Package') {
+                # code...
+
+                
+                return redirect('/success');
+            }
+
+
             return Paystack::getAuthorizationUrl()->redirectNow();
 
 
