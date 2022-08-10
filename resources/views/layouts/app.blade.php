@@ -219,10 +219,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="copy-right mb-5 text-center text-muted">
-                        <script>document.write(new Date().getFullYear())</script> Slima. Design with <i
+                        <script>document.write(new Date().getFullYear())</script> Meta Schools. Design with <i
                             class="mdi mdi-heart text-danger"></i> by <a
                             href="https://themeforest.net/search/themesdesign" target="_blank"
-                            class="text-reset">Themesdesign</a>.
+                            class="text-reset">vicSystems Technologies Ltd.</a>.
                     </div>
                 </div>
             </div>
