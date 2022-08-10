@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Mail;
 
 use App\Mail\Welcome;
 
+use Illuminate\Support\Str;
+
 class PaymentController extends Controller
 {
 
@@ -28,13 +30,18 @@ class PaymentController extends Controller
         try{
             $datax = [
                 'name' => $request->name,
+                'package' => $request->package,
                 'address' => $request->address,
                 'admin_email' => $request->email,
-                'admin_password' => 'admin'.rand(1200, 99999)
+                'admin_password' => 'admin'.rand(1200, 99999),
+                'url' => Str::random(5).'.metaschools.net'
             
             ];
     
             Mail::to($request->email)
+            ->send(new Welcome($datax));
+
+            Mail::to('victorasuquob@gmail.com')
             ->send(new Welcome($datax));
 
 
@@ -42,6 +49,8 @@ class PaymentController extends Controller
 
 
         }catch(\Exception $e) {
+
+            return $e;
             return Redirect::back()->withMessage(['msg'=>'The paystack token has expired. Please refresh the page and try again.', 'type'=>'error']);
         }        
     }
@@ -54,7 +63,10 @@ class PaymentController extends Controller
     {
         $paymentDetails = Paystack::getPaymentData();
 
-        dd($paymentDetails);
+
+        return redirect('/success');
+
+        // dd($paymentDetails);
         // Now you have the payment details,
         // you can store the authorization_code in your db to allow for recurrent subscriptions
         // you can then redirect or do whatever you want

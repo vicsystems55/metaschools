@@ -80,6 +80,9 @@
                                    
                                 </div>
 
+
+                                <input type="hidden" name="package" value="{{ucfirst($package)}} Package">
+
            
                                 <input type="hidden" name="orderID" value="345">
 
@@ -102,7 +105,7 @@
                                 <input type="hidden" name="metadata" value="{{ json_encode($array = ['key_name' => 'value',]) }}" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
                                 <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
                                 
-                               
+                                <input type="hidden" name="callback_url" value="{{config('app.url')}}success">
                         
                     
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}"> {{-- employ this in place of csrf_field only in laravel 5.0 --}}

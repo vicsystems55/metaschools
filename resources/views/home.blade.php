@@ -18,8 +18,8 @@
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-10">
                                                 <div class="home-content text-center text-white">
-                                                    <h1 class="home-title">We're Softland, A Creative Startup Based</h1>
-                                                    <p class="home-4-desc text-white-50 mt-4 f-15"> A digital web design
+                                                    <h1 class="home-title">We're Meta Schools, A Creative School Management System</h1>
+                                                    <p class="home-4-desc text-white-50 mt-4 f-15"> for Schools
                                                         studio creating modern & engaging online.
                                                         Separated they live in by injected humour <br> going to use
                                                         Bookmarksgrove right the Semantics, a
@@ -67,7 +67,7 @@
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-10">
                                                 <div class="home-content text-center text-white">
-                                                    <h1 class="home-title">Professional Business Page Template</h1>
+                                                    <h1 class="home-title">Professional Dashboard Template</h1>
                                                     <p class="home-4-desc text-white-50 mt-4 f-15">A digital web design
                                                         studio creating modern & engaging online.
                                                         Separated they live in Bookmarksgrove right the Semantics, a
